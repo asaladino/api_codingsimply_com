@@ -1,4 +1,6 @@
 *.pyc
 .idea
 *.sqlite3
-/api_codingsimply_com/my_settings.py
+api_codingsimply_com/my_settings.py
+api_codingsimply_com/prod_settings.py
+uploads/books/

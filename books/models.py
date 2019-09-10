@@ -6,7 +6,7 @@ class Book(models.Model):
     author = models.CharField(max_length=200)
     url = models.CharField(max_length=256, null=True, blank=True)
     thoughts = models.TextField()
-    cover = models.ImageField()
+    cover = models.ImageField(upload_to='uploads/books/')
     finished = models.DateTimeField('date finished')
 
     def __str__(self):
