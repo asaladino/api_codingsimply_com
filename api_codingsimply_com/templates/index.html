@@ -1,9 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
 {% if apis %}
-    <ul>
+<ul class="menu">
     {% for api in apis %}
-        <li><a href="/{{ api }}/">{{ api }}</a></li>
+    <li><a href="/{{ api }}/">{{ api }}</a></li>
     {% endfor %}
-    </ul>
+</ul>
 {% else %}
-    <p>No api are available.</p>
+<p>No api are available.</p>
 {% endif %}
+{% endblock content %}

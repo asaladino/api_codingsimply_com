@@ -1,0 +1,37 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Coding Simply API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation.css"
+          integrity="sha256-Ed7kL1p/BVuHCwGSEpUib2v9K7JtkCQlX4CweQEimJo=" crossorigin="anonymous"/>
+</head>
+<body>
+<div class="grid-container">
+    <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+            <h4>Welcome to the Coding Simply API</h4>
+            <hr/>
+        </div>
+    </div>
+
+    <div class="grid-x grid-padding-x">
+        <div class="large-12 medium-12 cell">
+            {% block content %}
+            Nothing to show.
+            {% endblock content %}
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/js/foundation.js"
+        integrity="sha256-7WVbN/J2vA6l4tJnRTx1Yh3RGQUcNRAYLo0OV9qsL+k=" crossorigin="anonymous"></script>
+<script>
+      $(document).foundation();
+
+</script>
+</body>
+</html>
