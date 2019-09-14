@@ -35,6 +35,11 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 10
 }
 
+CORS_ORIGIN_WHITELIST = [
+    "https://codingsimply.com",
+    "http://localhost:3000",
+]
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -46,6 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'books.apps.BooksConfig',
     'rest_framework',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
@@ -56,6 +62,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'api_codingsimply_com.urls'
